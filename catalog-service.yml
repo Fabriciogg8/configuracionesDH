@@ -1,0 +1,4 @@
+server:
+  port: ${PORT:8889}
+
+message: configuración CUSTOM con spring cloud config para catalog-service!
