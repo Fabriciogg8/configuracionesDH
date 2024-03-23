@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 9999
 spring:
   application:
     name: catalog-service
@@ -55,5 +55,3 @@ resilience4j:
           #        y la excepción contra la q queremos reintentar
           retryExceptions:
             - feign.FeignException$InternalServerError  
-custom:
-  message: "Saludos, este mensaje lo estamos obteniendo desde GITHUB"
