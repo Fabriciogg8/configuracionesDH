@@ -4,6 +4,7 @@ spring:
   application:
     name: catalog-service
 
+custom:
   message: "Saludos, este mensaje lo estamos obteniendo desde GITHUB"
 
 eureka:
