@@ -15,5 +15,3 @@ spring:
         mongodb:
             database: test
             port: 27017
-server:
-    port: 0
