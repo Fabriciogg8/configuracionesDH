@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: catalog-service
-
-
 eureka:
   client:
     service-url:
@@ -52,8 +50,10 @@ resilience4j:
     instances:
       movie-service:
         waitDuration: 1000
-          #        Le decimos la cantidad de reintentos que queremos hacer
-          maxAttempts: 3
-          #        y la excepción contra la q queremos reintentar
-          retryExceptions:
+          # Le decimos la cantidad de reintentos que queremos hacer
+        maxAttempts: 3
+          # y la excepción contra la q queremos reintentar
+        retryExceptions:
             - feign.FeignException$InternalServerError  
+custom:
+  message: "Mensaje desde Github, saludos."
