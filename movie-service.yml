@@ -6,6 +6,11 @@ spring:
       enabled: true
   application:
     name: movie-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3366/movie-dev
