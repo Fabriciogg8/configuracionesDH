@@ -11,6 +11,9 @@ management:
     web:
       exposure:
         include: '*'
+  tracing:
+    sampling:
+      probability: 1.0
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3366/movie-dev

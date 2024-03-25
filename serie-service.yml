@@ -14,7 +14,10 @@ management:
     web:
       exposure:
         include: '*'
- 
+  tracing:
+    sampling:
+      probability: 1.0
+
   mongodb:
     embedded:
       version: 7.0.7
