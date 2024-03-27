@@ -39,6 +39,13 @@ management:
   endpoint:
     health:
       show-details: always
+  mongodb:
+    embedded:
+      version: 7.0.7
+    data:
+      mongodb:
+        database: test
+        port: 27017
 
 resilience4j:
   circuitbreaker:
@@ -74,5 +81,3 @@ resilience4j:
           # y la excepción contra la q queremos reintentar
         retryExceptions:
             - feign.FeignException$InternalServerError  
-custom:
-  message: "Mensaje desde Github, saludos."
